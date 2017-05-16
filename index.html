@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Host Laravel On Digital Ocean </title>
+</head>
+<body>
+<h2>Configure Server Location</h2>
+<p>Now it is time to choose the physical location that your new server will be located. Each service has their own datacenter locations, but in general it is best to choose a location closest to where most of your users will be. So even if you are located in India, but most of your users are from the UK, then you should choose a London server. This makes your server fast for your users.</p>
+<img src="images/conf.jpg">
+<p>Select a location that you prefer to host it at that location. On some services there will be multiple dataservers at a single location. You basically just choose a number at random, it won’t make much difference, unless you have some sort of insider information at your disposal.</p>
+<h2>Select Linux Distro</h2>
+<p>The next step requires you to select which version of Linux you would like to use (this will configure the “L” in our LEMP stack. For this tutorial we will be using Ubuntu 16.04 x64 as our distro. Of course any of these will work if you have experience with them, but I will be demonstrating Ubuntu 16 in this tutorial.</p>
+<img src="images/serve.jpg">
+<h2>Logging Into Our Server</h2>
+<p>Now that you have an SSH client, it is time to log into our server so we can set it up. In the terminal type:</p>
+<img src="images/log.jpg">
+<p>
+	Simply replace 100.100.100.100 with the IP address for your server. You will have this IP address in your dashboard on your host, or in an email sent to you from your host after the server finished setting up. You might want to write this down somewhere nearby for the time being since we will need it several times going forward.
+
+The first time you boot into your server and you are using SSH Keys, you will probably get a message asking you if you want to trust or add this IP address to your list of known hosts. Just agree to it to continue and you will not get this message again.
+
+Now that you are into your server you will get a welcome message from Ubuntu.
+</p>
+<img src="images/ssh.jpg">
+<h5>Update Package Installer
+</h5>
+<p>We will be using the Apt-Get package installer to install new programs on our server. Think of this like the Apple App Store or Google Play Store, except not as cool looking, and it is for Linux programs.
+
+Before we start installing things, let’s make sure that our Apt-Get Installer is up to date. To do this just tell it to update with this command:</p>
+<img src="images/update.jpg">
+<img src="images/ngix.jpg">
+<img src="images/mysql.jpg">
+<img src="images/secure.jpg">
+<img src="images/remove.jpg">
+<img src="images/php.jpg">
+<p>The line we need to edit is cgi.fix_pathinfo=0 so you can either search for it like a needle in a haystack, or you can search for it using Ctrl+W , I personally recommend searching for it.
+
+Press Ctrl+W and now type in cgi.fix_pathinfo= and click enter. This will take you to the right line right away. You will see a semicolon the left of this line. Delete the semi colon and then change the 1 into a 0 and save the file. The file should look like this upon saving:</p>
+<img src="images/ini.jpg">
+<p>To save something in Nano, just press Ctrl+X and type Y and then press Enter.
+
+Before the changes can take effect we need to restart php-fpm by typing in this command:
+Now our change has taken effect.</p>
+<img src="images/sy.jpg">
+<img src="images/nfuc.jpg">
+<img src="images/ok.jpg">
+<img src="images/next.jpg">
+<img src="images/lao.jpg">
+<img src="images/return.jpg">
+<img src="images/create.jpg">
+<img src="images/yes.jpg">
+<img src="images/query.jpg">
+<img src="images/swap.jpg">
+<img src="images/composer.jpg">
+<img src="images/git.jpg">
+<img src="images/hook.jpg">
+<img src="images/tree.jpg">
+<img src="images/verify.jpg">
+<img src="images/permission.jpg">
+<img src="images/test.jpg">
+<img src="images/logs.jpg">
+<img src="images/cache.jpg">
+<img src="images/db.jpg">
+<img src="images/env.jpg">
+<img src="images/nv.jpg">
+<img src="images/file.jpg">
+<img src="images/key.jpg">
+<img src="images/app.jpg">
+<img src="images/sett.jpg">
+<img src="images/migrate.jpg">
+<p>Database Migrated</p>
+<img src="images/last.jpg">
+<img src="images/finish.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
